@@ -40,7 +40,7 @@ const services = [
     icon: Video,
     title: "1-to-1 Online Call",
     description: "Personalized consultation to discuss your application strategy.",
-    price: 15,
+    price: 10,
     features: [
       "30-minute video call",
       "Application strategy discussion",
