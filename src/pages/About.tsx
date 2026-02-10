@@ -81,7 +81,7 @@ const About = () => {
             <p className="text-lg text-muted-foreground animate-slide-up" style={{ animationDelay: "0.1s" }}>
               I'm a Software Engineer with a passion for AI/ML, competitive programming, 
               and making technology accessible. Currently focused on building intelligent 
-              systems and helping aspiring researchers achieve their academic dreams.
+              systems and helping graduate aspirants achieve their academic dreams.
             </p>
           </div>
         </div>

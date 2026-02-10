@@ -1,32 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Code, FileText, Users, Award, Sparkles } from "lucide-react";
+import { ArrowRight, FileText, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
-
-const stats = [
-  { value: "15+", label: "Hackathons" },
-  { value: "92%", label: "ML Accuracy" },
-  { value: "3.67", label: "CGPA" },
-  { value: "130", label: "Duolingo Score" },
-];
-
-const highlights = [
-  {
-    icon: Award,
-    title: "Competition Winner",
-    description: "2nd place RAISE Hackathon, Harvard CS50x Puzzle Day winner",
-  },
-  {
-    icon: Code,
-    title: "AI/ML Expertise",
-    description: "Python, TensorFlow, PyTorch, and cutting-edge LLM technologies",
-  },
-  {
-    icon: Users,
-    title: "Community Leader",
-    description: "GenAI trainer for 500+ audiences, mentor and judge at hackathons",
-  },
-];
 
 const Index = () => {
   return (
@@ -47,7 +22,7 @@ const Index = () => {
             
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
               Software Engineer passionate about AI/ML, building intelligent systems, 
-              and helping aspiring researchers achieve their academic goals.
+              and helping graduate aspirants to achieve their academic goals.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
@@ -64,58 +39,6 @@ const Index = () => {
                 </Link>
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 border-b border-border">
-        <div className="section-container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div
-                key={stat.label}
-                className="text-center animate-slide-up"
-                style={{ animationDelay: `${0.1 * index}s` }}
-              >
-                <div className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Highlights Section */}
-      <section className="py-20">
-        <div className="section-container">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              What I Bring to the Table
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A blend of technical excellence, competitive spirit, and a passion for teaching.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {highlights.map((item, index) => (
-              <div
-                key={item.title}
-                className="card-elevated p-6 animate-slide-up"
-                style={{ animationDelay: `${0.1 * index}s` }}
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <item.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-display font-semibold text-foreground text-lg mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
